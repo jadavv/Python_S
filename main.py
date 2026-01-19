@@ -46,14 +46,14 @@
 # print(type(b))
 
 
-"""strings"""
+# """strings"""
 
-a = "vivek pradip  meetraj"
+# a = "vivek pradip  meetraj"
 
 
-print(a[3:8:1])#ek pr
-print(a[3:11:-1])#ikri
-print(len(a))
+# print(a[3:8:1])#ek pr
+# print(a[3:11:-1])#ikri
+# print(len(a))
 
 
 # a = 12 
@@ -126,11 +126,11 @@ print(len(a))
 
 # print("A" > "B")
 
-print("Apple" < "bAnana")
+# print("Apple" < "bAnana")
 
 
 
-print(12 >20 and 123 > 100 and 34 == 34 and 45 < 90)
+# print(12 >20 and 123 > 100 and 34 == 34 and 45 < 90)
 
 # print(12 !=12 or 23 ==45 or 67 == 56 or 10 > 5)
 
@@ -454,8 +454,56 @@ print(12 >20 and 123 > 100 and 34 == 34 and 45 < 90)
 #         tries +=1 
 #         print("sorry you are wrong")
 
+
+
+# type of arguments 
+# 1. positional arguments   
+# 2. keyword arguments  
+# 3. default arguments
+
 # print(12)
 
+
+# def test(name ,age):
+#     print(f" {name} and age is {age}")
+    
+    
+# test(name="tejash",age=58)    
+# test(name="te",age=8)    
+# test(name="tejash",age=58)  
+
+
+
+
+# def test(name ="Akarsh"):
+#     print(f" name :{name}")
+    
+    
+# test()    
+# test("Rohit")  
+    
+     
+       
+    
+
+
+
+
+
+
+# def hello():
+#     print("python is great")
+#     print("python is great and more use1 ")
+#     print("python is great and more use2 ")
+#     print("python is great and more use3 ")
+    
+# hello()
+# hello()
+# hello()
+# hello()
+# hello()
+    
+    
 
 # def hello():
 #     print("this is a hello function so I am doing hello")
@@ -467,7 +515,7 @@ print(12 >20 and 123 > 100 and 34 == 34 and 45 < 90)
 # def hello(name,age):
 #     print(f"your name is {name} and your age is {age}")
 
-# hello(age = 22,name = "akarsh")
+# hello(23,"rohit")
 
 
 # def pallindrome(st):
@@ -485,10 +533,27 @@ print(12 >20 and 123 > 100 and 34 == 34 and 45 < 90)
 # pallindrome("CURSOR")
 
 # def hello():
-#     return "hello how are you"
+#     print( "hello how are you")
 
-# print(hello())
+# hello()
+t=(12,13,14,15,16,17,18,19,20,20.5,"akarsh",True,4j,None)
+print(type(t))
+print(t)
 
+
+list= [12,13,13,14,15,15,16,"ajay",56.6,True,4j,None]
+print(type(list))
+print((list))
+
+
+set= {12,13,14,15,16,17,18,19,20,20.5,"akarsh",True,4j,None}
+print(type(set))
+print(set)
+
+
+dist= {10:100,20:200,30:300,40:400,"name":"akarsh","age":23}
+print(type(dist))
+print(dist)
 
 # a = [12,13,14,15,16,34.5]
 
@@ -522,14 +587,15 @@ print(12 >20 and 123 > 100 and 34 == 34 and 45 < 90)
 # for i in l:
 #     sum = sum + i
 
-# print(sum/len(l))
+# print(sum//len(l))
 
 
 
 
 
-# l = [12,567,43,235,347,568,45,7]
+# l = [12,567,43,235,347,56,45,7]
 
+# print(len(l))
 # largest = l[0]
 # index = 0
 
@@ -558,10 +624,11 @@ print(12 >20 and 123 > 100 and 34 == 34 and 45 < 90)
 
 
 
-# a = [12,13,18,15,16]
+# a = [12,13,14,15,17]
 
 # for i in range(len(a)-1):
 #     if a[i] < a[i+1]:
+#         print(a)
 #         continue
 #     else:
 #         print("your list is not sorted")
@@ -579,7 +646,7 @@ print(12 >20 and 123 > 100 and 34 == 34 and 45 < 90)
 # print(count)
 
 
-# a = (1,)
+# a = {1,2,3,4,5}
 
 # print(type(a))
 
