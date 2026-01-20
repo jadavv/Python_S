@@ -397,9 +397,10 @@
 
 # a = 1 
 
-# while a <= 30:
+# while a <+ 30:
 #     print(a)
-#     a = a + 1
+    
+#     a = a + 2
 
 
 # a = int(input("tell your number"))
@@ -407,9 +408,9 @@
 # rev = 0
 
 # while a > 0:
-#     rev = rev *10 + a % 10
+#     rev = rev *10 + a % 10   
+    
 #     a = a //10
-
 # print(rev)
 
 
@@ -421,11 +422,12 @@
 # while a > 0:
 #     rev = rev *10 + a % 10
 #     a = a //10
+#     print(a)
 
 # if copy == rev:
 #     print("pallindromic number")
 # else:
-#     print("not a pallindromic number")
+#      print("not a pallindromic number")
 
 
 
@@ -467,6 +469,12 @@
 # def test(name ,age):
 #     print(f" {name} and age is {age}")
     
+# # test()
+# # test("rohit",34)
+# # test("tejash",58)
+# # test("te",8)
+# # test("tejash",58)    
+    
     
 # test(name="tejash",age=58)    
 # test(name="te",age=8)    
@@ -495,6 +503,7 @@
 #     print("python is great")
 #     print("python is great and more use1 ")
 #     print("python is great and more use2 ")
+#     print("python is great and more use3 ")
 #     print("python is great and more use3 ")
     
 # hello()
@@ -536,14 +545,22 @@
 #     print( "hello how are you")
 
 # hello()
-# t=(12,13,14,15,16,17,18,19,20,20.5,"akarsh",True,4j,None)
-# print(type(t))
-# print(t)
+
+# tuple=(12,13,14,15,16,17,18,19,20,20.5,"akarsh",True,4j,None)
+# print(type(tuple))
+# print(tuple)
 
 
 # list= [12,13,13,14,15,15,16,"ajay",56.6,True,4j,None]
-# print(type(list))
-# print((list))
+
+# print(list)
+# list.clear()
+# print(list)
+
+
+b={5}
+print(type(b))
+
 
 
 # set= {12,13,14,15,16,17,18,19,20,20.5,"akarsh",True,4j,None}
@@ -728,6 +745,7 @@
 
 
 # a = int(input("tell your number :- "))
+# # print(a)
 
 # try:
 #     print(10/a)
@@ -762,11 +780,58 @@
 
 # print("the club will start soon")
 
-#File handling
+# File handling  
 
-# r = open("superman.txt",'a')
 
-# r.write("and now I am appending some content inside the file  ")
+#  file create
+# file = open("d.txt", "x")
+
+#file.close()
+
+# update
+# file = open("d.txt", "w")
+# file.write("hello this is a data file  ")
+# file.close()
+
+# read
+# file = open("data.txt", "r")
+# content = file.read()
+# print(content)
+# file.close()
+
+#appent
+# file = open("data.txt", "a")
+# file.write("This is new data\n")
+# file.close()
+
+
+# file = open("data.txt", "r")
+# print(file.read())
+# file.close()
+
+
+
+# if "Python" in content:
+#     file = open("data.txt", "a")
+#     file.write("Python word found\n")
+#     file.close()
+    
+   # detele file 
+# import os
+# os.remove("new.txt")
+
+
+
+
+
+# r = open("superman.txt",'r')
+# print(r.read())
+
+# create= open("new.txt",'x')
+# print(create)
+# 
+
+# r.write("and now I am appending some content  ")
 
 # r.close()
 
