@@ -536,24 +536,24 @@
 #     print( "hello how are you")
 
 # hello()
-t=(12,13,14,15,16,17,18,19,20,20.5,"akarsh",True,4j,None)
-print(type(t))
-print(t)
+# t=(12,13,14,15,16,17,18,19,20,20.5,"akarsh",True,4j,None)
+# print(type(t))
+# print(t)
 
 
-list= [12,13,13,14,15,15,16,"ajay",56.6,True,4j,None]
-print(type(list))
-print((list))
+# list= [12,13,13,14,15,15,16,"ajay",56.6,True,4j,None]
+# print(type(list))
+# print((list))
 
 
-set= {12,13,14,15,16,17,18,19,20,20.5,"akarsh",True,4j,None}
-print(type(set))
-print(set)
+# set= {12,13,14,15,16,17,18,19,20,20.5,"akarsh",True,4j,None}
+# print(type(set))
+# print(set)
 
 
-dist= {10:100,20:200,30:300,40:400,"name":"akarsh","age":23}
-print(type(dist))
-print(dist)
+# dist= {10:100,20:200,30:300,40:400,"name":"akarsh","age":23}
+# print(type(dist))
+# print(dist)
 
 # a = [12,13,14,15,16,34.5]
 
