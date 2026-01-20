@@ -1,5 +1,8 @@
 """variables"""
 
+# rohit_harish = "rohit and harsh are best friends"
+# print(rohit_harish)
+# print(type(rohit_harish))
 
 
 # sher = "harsh bhaiya"
@@ -11,23 +14,24 @@
 
 
 
-# ?   htn
+
 """data types"""
 
-# a = -34
+# a = 34
 
 # b = 56.8
-# c = 12/3
+# c = "hello world"
 
 # v = 34j
+# d=True
 
+
+
+# print(type(a))
+# print(type(b))
+# print(type(c))
+# print(type(d))
 # print(type(v))
-# b=34
-
-# print(type(b))
-# print(type(b))
-# print(type(b))
-# print(type(b))
 
 
 
@@ -46,9 +50,18 @@
 # print(type(b))
 
 
-# """strings"""
+"""strings sliceing"""
 
-# a = "vivek pradip  meetraj"
+# rohit = "kunal suraj nikuj tejas shreyes sanket"
+# harsh="tushar vijay hitesh mahendra daya"
+
+# print(len(rohit)) #37
+# print(len(harsh))#33
+
+# print(rohit[3:25:2]) #a_ua_iu_ea_
+# print(harsh[3:25:2]) #hrvjyhts_ae
+
+
 
 
 # print(a[3:8:1])#ek pr
@@ -60,6 +73,13 @@
 
 # print(12/3)
 
+# name="harishchandra"
+# age=30
+# branch="computer engineering"
+# city="valsad"
+
+# print(f"my name is {name}, age is {age}, branch is {branch} and city is {city}")
+
 # name = "akarsh"
 # age = "23"
 
@@ -67,19 +87,19 @@
 
 # age = int(input("hello what is your age"))
 
-# print(age)
+# # print(age)
 
-# a = 5
-# b = 32
+# a=(int(input("tell your number: ")))
+# b=(int(input("tell your number: ")))
 
 
 # print(a + b)
 # print(b - a)
 # print(a * b)
-# print(b//a)
-# print(b/a)
-# print(5**3)
-# print(50%5)
+# print(a/b)
+# print(a//b)
+# print(5**4)
+# print(10%5)
 
 
 # print(12+4-56*2/2)
@@ -87,15 +107,22 @@
 
 #assignment operators 
 
+# += -= *= /= //= **= %
+
 # a = 23
 
 #compound assignmet operations
 
 # a = 10
 
-# a += 20
-# a += 40
-# a += 60
+# a = 20
+# print(a)
+# a = 40
+# print(a)
+
+# a = 60
+# print(a)
+
 # a-=10
 # a*=50
 # a/=12
