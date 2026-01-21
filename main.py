@@ -571,9 +571,9 @@
 # def hello():
 #     print( "hello how are you")
 
-# hello()
+# # hello()
 
-# tuple=(12,13,14,15,16,17,18,19,20,20.5,"akarsh",True,4j,None)
+# tuple=(12,13,14,1,16,17,18,19,2,20.5,"akarsh",True,4j,None)
 # print(type(tuple))
 # print(tuple)
 
@@ -585,12 +585,12 @@
 # print(list)
 
 
-b={5}
-print(type(b))
+# b={5}
+# print(type(b))
 
 
 
-# set= {12,13,14,15,16,17,18,19,20,20.5,"akarsh",True,4j,None}
+# set= {12,1,1,14,15,16,17,17,2,19,20,20.5,"akarsh",True,4j,None}
 # print(type(set))
 # print(set)
 
@@ -813,6 +813,10 @@ print(type(b))
 #  file create
 # file = open("d.txt", "x")
 
+# v=open("main.py","r")
+# print(v.read())
+# v.close()
+
 #file.close()
 
 # update
@@ -867,10 +871,16 @@ print(type(b))
 
 #     def hello(self): #method
 #         print("how are you")
-    
+        
+#         print("factory class created")        
+# Factory().hello()
+# print(Factory.a)
+# # obj = Factory()
 
 
-# obj = Factory()
+
+
+
 
 # obj2 = Factory()
 
@@ -882,13 +892,13 @@ print(type(b))
 #         self.pockets = pockets
     
 #     def show(self):
-#         print(f"your object details are {self.material}, {self.pockets},{self.zips} ")
+#         print(f"your object details are {self.material}, ,{self.zips},{self.pockets} ")
     
 
 
-# reebok = Factory("leather",3,2)
+# reebok = Factory(2,1,"4")
 
-# campus = Factory("nylon",3,3)
+# # campus = Factory("bag","4"/,"5")
 
 # reebok.show()
 
