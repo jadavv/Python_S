@@ -49,6 +49,13 @@
 
 # print(type(b))
 
+# A= "string operations"
+
+# print(type(A))
+# print(len(A))
+
+# print(A[2:16:2])#rn_prto
+
 
 """strings sliceing"""
 
@@ -58,7 +65,7 @@
 # print(len(rohit)) #37
 # print(len(harsh))#33
 
-# print(rohit[3:25:2]) #a_ua_iu_ea_
+# print(rohit[3:25:1]) #a_ua_iu_ea_
 # print(harsh[3:25:2]) #hrvjyhts_ae
 
 
@@ -99,32 +106,35 @@
 # print(a/b)
 # print(a//b)
 # print(5**4)
-# print(10%5)
+# print(13%5) 
 
 
-# print(12+4-56*2/2)
+# print(2+4-5*2/5)
+
 
 
 #assignment operators 
 
 # += -= *= /= //= **= %
-
 # a = 23
+
 
 #compound assignmet operations
 
 # a = 10
 
-# a = 20
+# a += 20
 # print(a)
-# a = 40
-# print(a)
-
-# a = 60
+# a += 40
 # print(a)
 
-# a-=10
+# a += 60
+# print(a)
+
+# a -=10
+# print(a)
 # a*=50
+# print(a)
 # a/=12
 # a//=14
 # a**=2
@@ -140,7 +150,7 @@
 
 # print(a > b)
 # print(45 < 67)
-# print(23 >= 23)
+# print(23 <= 23)
 # print(45 <= 45)
 
 
@@ -155,17 +165,22 @@
 
 # print("Apple" < "bAnana")
 
+# print(ord("s","a"))
+
+# print("23" < "45")
+# print("28" > "47")
+
+# print(1 >10 and 123 < 100 and 34 >= 34 and 45 > 90)
+# print( 12< 0 and 123 < 50 and 34 <= 4 and 45 > 90)
 
 
-# print(12 >20 and 123 > 100 and 34 == 34 and 45 < 90)
-
-# print(12 !=12 or 23 ==45 or 67 == 56 or 10 > 5)
-
+# print(12 < 8 or 23 > 45 or 67 == 56 or 10 < 5) 
+# print(12 != 2 or 50 ==50 or 67 >= 56 or 10 > 5)
 # print(not 12 == 12)
 
 #IF else 
 
-# a = 6
+# a = 11
 
 # if a > 10:
 #     print("I will do task A")
@@ -187,6 +202,7 @@
 # else:
 #     print("I will have a cone")
 
+
 # num1 = int(input("pleae tell your first number "))
 # num2 = int(input("pleae tell your second number "))
 
@@ -199,12 +215,13 @@
 #     print("Both the numbers are same")
 
 
-# gen = input("please tell your gender as character (M or F):-")
+# gen = input("please tell your gender as character (M,m  or F,f ):-")
 
 # if gen == 'M' or gen == 'm':
 #     print("Good morning SIR")
 # elif gen == "F" or gen == 'f':
 #     print("Good morning MAM")
+
 
 # else:
 #     print("Unidentified gender")
@@ -292,21 +309,22 @@
 # else:
 #     print("Break statement is not executed")
 
-
+# a=4
+# # print(type(a))
 # n = int(input("please tell your number"))
 
-# for i in range(n):
-#     print("hello world ")
-
-# n = int(input("please tell your number "))
-
-# for i in range(1,n+1):
+# for i in range(n,1):
 #     print(i)
 
 # n = int(input("please tell your number "))
 
 # for i in range(n,0,-1):
 #     print(i)
+
+# n= int(input("please tell your number "))
+
+# for i in range(11,1,1):
+#    print(i)
 
 
 # n = int(input("which table you want : - "))
