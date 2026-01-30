@@ -372,12 +372,13 @@
 #     if n%i == 0:
 #         print(i)
 
-
+#   # 6 28 496 8128 
 # n = int(input("check your number is perfect or not :-"))
 # sum = 0
 # for i in range(1,n):
 #     if n%i == 0:
-#         sum = sum + i
+#         sum = sum + i 
+#         print(sum)
 
 # if sum == n:
 #     print("your number is perfect")
@@ -394,6 +395,8 @@
 # for i in range(1,n+1):
 #     if n%i == 0:
 #         count = count + 1
+        
+#         print(count)
 
 # if count == 2:
 #     print("your number is prime")
@@ -409,12 +412,13 @@
 
 # print(b)
 
-# a = "NAMAN"
+# a =(input(" enter the values:"))
 
 # b = ""
-# for i in range(len(a)-1,-1,-1):
-#     b = b + a[i]
-
+# for i in range(len(str(a))-1,-1,-1):
+#     b = b + str(a)[i]
+#    #  print(i)
+#     print(b)
 
 # if b == a:
 #     print("your string is pallindrome")
@@ -422,7 +426,8 @@
 # else:
 #     print("its not a pallindrome")
 
-# a = "sdfsogn12413@#$%^&U"
+# a = "sdfsogn1etth442413@#$%^&U"
+# print(len(a))
 
 # char = 0
 # dig = 0
@@ -436,16 +441,17 @@
 #     else:
 #         spchr +=1 
 
-# print(f"your digits are {dig}\nyour alphabets are {char}\nyour special characters are {spchr}")
+# print(f"your digits are {dig}\n your alphabets are {char}\nyour special characters are {spchr}")
 
 # print(dir(str))
 
 # a = 1 
 
-# while a <+ 30:
+# while a <= 2:
 #     print(a)
-    
-#     a = a + 2
+#     a += 1
+#     print("inside loop")
+#     print(a)
 
 
 # a = int(input("tell your number"))
@@ -453,9 +459,11 @@
 # rev = 0
 
 # while a > 0:
-#     rev = rev *10 + a % 10   
+#     rev = rev *10 + a % 10
+#     print (rev)  
     
 #     a = a //10
+#     print(a)
 # print(rev)
 
 
@@ -514,11 +522,12 @@
 # def test(name ,age):
 #     print(f" {name} and age is {age}")
     
-# # test()
-# # test("rohit",34)
-# # test("tejash",58)
-# # test("te",8)
-# # test("tejash",58)    
+    
+# test(34,"rohit")
+# test("rohit",34)
+# test("tejash",58)
+# test("te",8)
+# test("tejash",58)    
     
     
 # test(name="tejash",age=58)    
@@ -591,7 +600,7 @@
 
 # # hello()
 
-# tuple=(12,13,14,1,16,17,18,19,2,20.5,"akarsh",True,4j,None)
+# tuple=(12,13,13,14,1,16,17,18,19,2,20.5,"akarsh",True,4j,None)
 # print(type(tuple))
 # print(tuple)
 
@@ -607,16 +616,17 @@
 # print(type(b))
 
 
-
-# set= {12,1,1,14,15,16,17,17,2,19,20,20.5,"akarsh",True,4j,None}
+# set= {12,1,1,14,15,15,16,17,17,2,19,20,20.5,"akarsh",True,4j,None}
 # print(type(set))
 # print(set)
 
 
-# dist= {10:100,20:200,30:300,40:400,"name":"akarsh","age":23}
+# dist={10:100,20:200,30:300,40:400,"name":"akarsh","age":23}
 # print(type(dist))
 # print(dist)
 
+# a=[]
+# print(type(a))
 # a = [12,13,14,15,16,34.5]
 
 
