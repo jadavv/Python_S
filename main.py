@@ -281,6 +281,10 @@
 
 #For loop
 
+
+# for i in range(10,0,-1):
+#     print(i)
+
 #lets print a table of 5
 # n = int(input("Which table you want ? "))
 
@@ -301,9 +305,9 @@
 
 
 # for i in range(1,21):
-#     if i == 56:
+#     if i == 15:
 #         print("break statement is executed")
-#         break
+#         continue  
 #     print(i)
 
 # else:
@@ -324,7 +328,7 @@
 # n= int(input("please tell your number "))
 
 # for i in range(11,1,1):
-#    print(i)
+   # print(i)
 
 
 # n = int(input("which table you want : - "))
@@ -537,12 +541,15 @@
 
 
 
-# def test(name ="Akarsh"):
-#     print(f" name :{name}")
-    
-    
+# def test(name="vishal" ,age="56"):
+#     print(f" hello good morning :{name} age {age}")
+#     print("have a nice day")
 # test()    
-# test("Rohit")  
+# test(name="kiran",age=34)    
+# test(age=34,name="rohit")
+# test()  
+  
+
     
      
        
