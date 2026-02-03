@@ -901,39 +901,53 @@
 
 # r.close()
 
-# class Factory:
-#     a = 12 # attribute 
+# class college:
+#     name = "xyz" # attribute 
 
-#     def hello(self): #method
-#         print("how are you")
+#     def it(self): #method
+#         print("hello I am from it department")
         
-#         print("factory class created")        
-# Factory().hello()
-# print(Factory.a)
-# # obj = Factory()
+# # print(college.name)
+# college().it()
+# obj = college()
+# print(obj.name)
 
 
 
 
 
 
-# obj2 = Factory()
 
 
-# class Factory:
-#     def __init__(self,material,zips,pockets):
-#         self.material = material
-#         self.zips = zips
-#         self.pockets = pockets
+
+
+class students:
+    def __init__(self,name,age,gender,bir,phone):
+        self.name = name
+        self.age = age
+        self.gender= gender
+        self.bir = bir
+        self.phone = phone
     
-#     def show(self):
-#         print(f"your object details are {self.material}, ,{self.zips},{self.pockets} ")
+    def s(self):
+        print(f"your students detail show  {self.name}, {self.age}, {self.gender}, {self.bir}, {self.phone} ")
+    
+    @staticmethod
+    def com()  :
+         print("hello I am a class method")
+      
     
 
 
-# reebok = Factory(2,1,"4")
+info = students("akarsh",23,"male","12-05-2001",9876543210)
+# info.s()
+# students.s(info)
+students.s(info)
+students.com()
 
-# # campus = Factory("bag","4"/,"5")
+# info.show()
+
+# campus = Factory("bag","4"/,"5")
 
 # reebok.show()
 
