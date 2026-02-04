@@ -376,7 +376,7 @@
 #     if n%i == 0:
 #         print(i)
 
-#   # 6 28 496 8128 
+#   # 6 28 496 8128   1 2 3 4 5 6 7 
 # n = int(input("check your number is perfect or not :-"))
 # sum = 0
 # for i in range(1,n):
@@ -398,9 +398,10 @@
 
 # for i in range(1,n+1):
 #     if n%i == 0:
+#         print("i loop",i)
 #         count = count + 1
         
-#         print(count)
+#         print("total count",count)
 
 # if count == 2:
 #     print("your number is prime")
@@ -449,12 +450,11 @@
 
 # print(dir(str))
 
-# a = 1 
+# a = 0 
 
-# while a <= 2:
-#     print(a)
+# while a < 5:
+#     # print(a)
 #     a += 1
-#     print("inside loop")
 #     print(a)
 
 
@@ -846,7 +846,17 @@
 
 
 #  file create
-# file = open("d.txt", "x")
+# file = open("loop.txt", "x")
+
+# python=open("newfile.txt","x")
+
+# py=open("newfile.txt","w")
+# print(py.write("hello  "))
+# py.close()
+
+# loop=open("main.py","r")
+# print(loop.read())
+# loop.close()
 
 # v=open("main.py","r")
 # print(v.read())
@@ -854,8 +864,8 @@
 
 #file.close()
 
-# update
-# file = open("d.txt", "w")
+# # update
+# file = open("l.txt", "w")
 # file.write("hello this is a data file  ")
 # file.close()
 
@@ -865,9 +875,9 @@
 # print(content)
 # file.close()
 
-#appent
-# file = open("data.txt", "a")
-# file.write("This is new data\n")
+# appent
+# file = open("l.txt", "r")
+# print(file.read())
 # file.close()
 
 
@@ -882,9 +892,48 @@
 #     file.write("Python word found\n")
 #     file.close()
     
-   # detele file 
+#    # detele file 
 # import os
-# os.remove("new.txt")
+# os.remove("newfile.txt")
+# file= open("sum.txt", "w")
+# file.write("12\n34\n56\n78\n90\n")
+# file.close()
+
+# total = 0
+
+# file = open("sum.txt", "r")
+
+# for i in file:
+#     total += int(i)
+#     print("total so far:", total)
+
+# file.close()
+
+# print("Sum:", total)
+# print("error")   
+# def sum():
+#       a = int(input("tell your number :- "))
+#       b = int(input("tell your number :- "))
+#       e = a + b
+#       print(e)
+        
+      
+# sum()
+# def error():
+     
+#       try:
+#          a = int(input("tell your number1 :- "))
+#          b = int(input("tell your number2 :- "))
+#          print(b+a)
+#       except Exception as err:
+#          print(f"sorry there is an err as {err}")
+#       else:
+#          print("good there is no exception")
+#       finally:
+#          print("i will run  no matter what ")
+         
+# error()         
+
 
 
 
@@ -921,29 +970,29 @@
 
 
 
-class students:
-    def __init__(self,name,age,gender,bir,phone):
-        self.name = name
-        self.age = age
-        self.gender= gender
-        self.bir = bir
-        self.phone = phone
+# class students:
+#     def __init__(self,name,age,gender,bir,phone):
+#         self.name = name
+#         self.age = age
+#         self.gender= gender
+#         self.bir = bir
+#         self.phone = phone
     
-    def s(self):
-        print(f"your students detail show  {self.name}, {self.age}, {self.gender}, {self.bir}, {self.phone} ")
+#     def s(self):
+#         print(f"your students detail show  {self.name}, {self.age}, {self.gender}, {self.bir}, {self.phone} ")
     
-    @staticmethod
-    def com()  :
-         print("hello I am a class method")
+#     @staticmethod
+#     def com()  :
+#          print("hello I am a class method")
       
     
 
 
-info = students("akarsh",23,"male","12-05-2001",9876543210)
-# info.s()
+# info = students("akarsh",23,"male","12-05-2001",9876543210)
+# # info.s()
+# # students.s(info)
 # students.s(info)
-students.s(info)
-students.com()
+# students.com()
 
 # info.show()
 
