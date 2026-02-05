@@ -527,7 +527,7 @@
 #     print(f" {name} and age is {age}")
     
     
-# test(34,"rohit")
+# test("45","ram")
 # test("rohit",34)
 # test("tejash",58)
 # test("te",8)
@@ -541,11 +541,11 @@
 
 
 
-# def test(name="vishal" ,age="56"):
+# def test(name="harish" ,age=23):
 #     print(f" hello good morning :{name} age {age}")
 #     print("have a nice day")
 # test()    
-# test(name="kiran",age=34)    
+# test(name="rohit",age=24)    
 # test(age=34,name="rohit")
 # test()  
   
@@ -582,10 +582,11 @@
 # hello()
 
 
-# def hello(name,age):
+# def hello(name,age=34):
 #     print(f"your name is {name} and your age is {age}")
 
-# hello(23,"rohit")
+# hello(name="rohit")
+# hello("hari")
 
 
 # def pallindrome(st):
@@ -601,6 +602,8 @@
 
 # pallindrome("NAMAN")
 # pallindrome("CURSOR")
+# pallindrome("121")
+# pallindrome("AKARSH")
 
 # def hello():
 #     print( "hello how are you")
@@ -619,7 +622,7 @@
 # print(list)
 
 
-# b={5}
+# b={2}
 # print(type(b))
 
 
@@ -633,9 +636,9 @@
 # print(dist)
 
 # a=[]
-# print(type(a))
 # a = [12,13,14,15,16,34.5]
 
+# print(a)
 
 # #1st way using index
 
