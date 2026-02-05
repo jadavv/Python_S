@@ -916,9 +916,37 @@
 #       b = int(input("tell your number :- "))
 #       e = a + b
 #       print(e)
-        
-      
+# print("starting the program") 
+# print(10/0)
+# print("End")     
 # sum()
+
+# def sum(s,r):
+#    try:
+#    #    s=float(input("enter your number :- "))
+#    #    r=float(input("enter your number :- "))
+#       t=s+r
+#       print(t)
+      
+#    except Exception as err:
+#       print(f"sorry there is an err as {err}")
+#    else:
+#       print("good there is no exception")
+      
+      
+#    finally:
+#       print("i will run no matter what ")   
+         
+# sum(5,9)      
+      
+      
+      
+      
+
+
+
+
+
 # def error():
      
 #       try:
@@ -978,7 +1006,7 @@
 #         self.bir = bir
 #         self.phone = phone
     
-#     def s(self):
+#     def show(self):
 #         print(f"your students detail show  {self.name}, {self.age}, {self.gender}, {self.bir}, {self.phone} ")
     
 #     @staticmethod
@@ -989,9 +1017,8 @@
 
 
 # info = students("akarsh",23,"male","12-05-2001",9876543210)
-# # info.s()
-# # students.s(info)
-# students.s(info)
+# info.show()
+# students.show(info)
 # students.com()
 
 # info.show()
@@ -1004,7 +1031,7 @@
 
 # class Animal:
 #     name = "lion" #class attribute
-    
+   
 #     def __init__(self,age):
 #         self.age = age #instance attribute
     
@@ -1012,8 +1039,8 @@
 #         print(f"how are you your agger is {self.age}")
     
 #     @classmethod
-#     def hello(cls):
-#         print(f"how are you brother {cls.age}")
+#     def hello(c):
+#         print(f"how are you brother {c.age}")
 
 #     @staticmethod
 #     def static():
@@ -1022,6 +1049,30 @@
    
 
 # obj = Animal(12)
+# print(obj.name)
+# obj.show()
+# Animal.static()
+
+# class Parent:
+#     def __init__(self,name):
+#        self.name = name
+#        self.age = 58
+#       #  print(f"hello I am parent class method and my name is {self.name}")
+       
+# class Child(Parent):
+#     def __init__(self,name,age):
+#         super().__init__(name)
+#         self.age = age
+#       #   print(f"hello I am child class method and my age is {self.name} and {self.age}") 
+        
+#     def diplay(self):
+#        print(f"hello I am a display method and my name is {self.name} and my age is {self.age}")      
+        
+# obj = Parent("Ramu") 
+# print(obj.name)
+# obj2 = Child("Emma",15)   
+# print(obj2.name) 
+# obj2.diplay()
 
 # class Factorymumbai: #parent class / superclass
 #     a = "I am an attribute mentioned inside Factory"
@@ -1032,6 +1083,7 @@
 #     pass
 
 # obj = Factorymumbai()
+# print(obj.a)
 
 # obj2 = Factorypune()
 
@@ -1039,26 +1091,28 @@
 
 
 # class Animal:
-#     def __init__(self,name):
+#     def __init__(self,name,age,color):
 #         self.name = name
+#         self.age = age
+#         self.color = color
     
 #     def show(self):
-#         print(f"hello your name is {self.name}")
+#         print(f"hello your name is {self.name},{self.age},{self.color}")
     
 
-# class Human(Animal):
-#     def __init__(self, name,age):
-#         super().__init__(name)
+# class dog(Animal):
+#     def __init__(self, name,age,color):
+#         super().__init__(name,age,color)
 #         self.age = age
     
 #     def show(self):
-#         print(f"hello your name is {self.name},{self.age}")
+#         print(f"hello your name is {self.name},{self.age},{self.color}")
 
+# # animal1 = Animal("lion")
+# person1 = dog("rio",23,"brown")
 
-# animal1 = Animal("lion")
-# person1 = Human("akarsh",23)
-
-# animal1.show()
+# person1.show()
+# Animal.show(person1)
 
 
 # class Animal:
@@ -1073,6 +1127,7 @@
 #     name3 = "charli123"
 
 # obj = Robots()
+# print(obj.name3)
 
 # class Factory:
 #     def __init__(self,material,zips):
