@@ -983,14 +983,16 @@
 
 # class college:
 #     name = "xyz" # attribute 
+#    #  brach="com"
 
 #     def it(self): #method
 #         print("hello I am from it department")
         
 # # print(college.name)
-# college().it()
 # obj = college()
+
 # print(obj.name)
+# college().it()
 
 
 
@@ -1015,6 +1017,7 @@
 #     @staticmethod
 #     def com()  :
 #          print("hello I am a class method")
+#          print("without self  instance method  run program")
       
     
 
@@ -1042,19 +1045,19 @@
 #         print(f"how are you your agger is {self.age}")
     
 #     @classmethod
-#     def hello(c):
-#         print(f"how are you brother {c.age}")
+#     def hello(tttete):
+#         print("how are you brother")
 
-#     @staticmethod
-#     def static():
-#         print("how are you")
+   #  @staticmethod
+   #  def static():
+   #      print("how are you")
 
    
 
-# obj = Animal(12)
-# print(obj.name)
+# obj = Animal(18)
+# print(obj.age)
 # obj.show()
-# Animal.static()
+# Animal.hello()
 
 # class Parent:
 #     def __init__(self,name):
@@ -1117,20 +1120,27 @@
 # person1.show()
 # Animal.show(person1)
 
-
+# # multiple inheritance
 # class Animal:
-#     def __init__(self,name):
-#         pass
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
 
 # class Human:
 #     def __init__(self,name,age):
-#         pass
+#         self.name = name
+#         self.age = age
 
-# class Robots(Human,Animal):
-#     name3 = "charli123"
+# class Robots(Animal,Human):
+#    #  name3 = "charli123"
+#    pass
 
-# obj = Robots()
-# print(obj.name3)
+# obj= Robots("charli",23)
+# print(obj.name)
+# print(obj.age)
+
+
+# maulti level inheritance
 
 # class Factory:
 #     def __init__(self,material,zips):
@@ -1148,10 +1158,18 @@
 #         super().__init__(material, zips, color)
 #         self.pockets = pockets
 
+# obj= Punefactory("cotton",5,"blue",4)  
+# print(obj.material)
+# print(obj.zips)
+# print(obj.color)
+# print(obj.pockets)      
 
+
+
+#polimorphism 
 # class Animal:
 #     def show(self):
-#         print("hello I am akarsh")
+#         print("hello dog is animal")
     
 
 
@@ -1177,17 +1195,59 @@
 # obj.show()
 # obj2.show()
 
-
+# encapsulation   
 # class Factory:
 #     __a = "pune"
 
 #     def show(self):
-#         print(Factory.__a)
+#        print(Factory.__a)
 
 
-# obj = Factory()
+# obj =Factory()
 
 # obj.show()
+# private
+
+# class Demo:
+#     def __init__(self):
+#         self.__salary = 5000   # Private variable
+
+#     def show(self):
+#         print("Inside class, Private salary:", self.__salary)
+
+
+# obj = Demo()
+
+# Access inside class (OK)
+# obj.show()
+
+
+# Direct access (❌ Error)
+# print(obj.__salary)
+
+# Correct way (name mangling)
+# print("Outside class, Private salary:", obj._Demo__salary)
+
+
+
+# class Demo:
+#    def __init__(self):
+#       self.name="public memeber"
+#       self._age=21
+#       self.__salary=5000
+      
+#    def show(self):
+#       print("inside the class ")  
+#       print("public",self.name) 
+#       print("protative",self._age) 
+#       print("private",self.__salary)
+      
+# obj=Demo()
+# obj.show() 
+# obj.__salary 
+  
+
+
 
 
 # from abc import ABC, abstractmethod
@@ -1211,9 +1271,9 @@
 #     def area(self):
 #         print("I have created this ")
 
-
-
 # class Circle(abstract):
+   
+   
 #     def __init__(self,radius):
 #         self.radius = radius
     
@@ -1224,6 +1284,7 @@
 #         print("I have created this ")
 
 # obj = Circle(7)
+# print(obj)
 # obj2 = Square(12)
 
 
@@ -1233,7 +1294,7 @@
 #         self.age = age
     
 #     def __str__(self):
-#         return f"hello how are you and your name is {self.name}"
+#         return f"hello how are you and your name is {self.name},age{self.age}"
 
 #     def __add__(self,other):
 #         sum = 0
