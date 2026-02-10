@@ -1015,7 +1015,7 @@
 #         print(f"your students detail show  {self.name}, {self.age}, {self.gender}, {self.bir}, {self.phone} ")
     
 #     @staticmethod
-#     def com()  :
+#     def com():
 #          print("hello I am a class method")
 #          print("without self  instance method  run program")
       
@@ -1023,7 +1023,7 @@
 
 
 # info = students("akarsh",23,"male","12-05-2001",9876543210)
-# info.show()
+# # info.show()
 # students.show(info)
 # students.com()
 
@@ -1045,38 +1045,41 @@
 #         print(f"how are you your agger is {self.age}")
     
 #     @classmethod
-#     def hello(tttete):
+#     def hello(c):
 #         print("how are you brother")
 
-   #  @staticmethod
-   #  def static():
-   #      print("how are you")
+#    #  @staticmethod
+#    #  def static():
+#    #      print("how are you")
 
    
 
 # obj = Animal(18)
 # print(obj.age)
-# obj.show()
+# obj2=Animal.name
+# print(obj2)
+# # obj.show()
 # Animal.hello()
 
 # class Parent:
-#     def __init__(self,name):
+#     def __init__(self,name,age,valsad):
 #        self.name = name
-#        self.age = 58
+#        self.age = age
+#        self.valsad=valsad
 #       #  print(f"hello I am parent class method and my name is {self.name}")
        
 # class Child(Parent):
-#     def __init__(self,name,age):
-#         super().__init__(name)
+#     def __init__(self,name,age,valsad):
+#         super().__init__(name,age,valsad)
 #         self.age = age
-#       #   print(f"hello I am child class method and my age is {self.name} and {self.age}") 
+#         print(f"hello I am child class method and my age is {self.name} and {self.age},my city {self.valsad}") 
         
 #     def diplay(self):
-#        print(f"hello I am a display method and my name is {self.name} and my age is {self.age}")      
+#        print(f"hello I am a display method and my name is {self.name} and my age is {self.age}my city {self.valsad}")      
         
-# obj = Parent("Ramu") 
+# obj = Parent("lakan",45,"v") 
 # print(obj.name)
-# obj2 = Child("Emma",15)   
+# obj2 = Child("kishan",56,"V")   
 # print(obj2.name) 
 # obj2.diplay()
 
@@ -1120,45 +1123,48 @@
 # person1.show()
 # Animal.show(person1)
 
-# # multiple inheritance
+# multiple inheritance
 # class Animal:
-#     def __init__(self,name,age):
+#     def __init__(self,name):
 #         self.name = name
-#         self.age = age
+       
 
 # class Human:
 #     def __init__(self,name,age):
 #         self.name = name
 #         self.age = age
 
-# class Robots(Animal,Human):
+# class Robots(Human,Animal):
 #    #  name3 = "charli123"
 #    pass
 
-# obj= Robots("charli",23)
+# obj= Robots("viki",12)
 # print(obj.name)
 # print(obj.age)
 
 
-# maulti level inheritance
+# # maulti level inheritance
 
-# class Factory:
-#     def __init__(self,material,zips):
+# class ahmFactory:
+#     def __init__(self,material,zips,color):
 #         self.material = material
 #         self.zips = zips 
+#         self.color = color 
     
 
-# class BhopalFactory(Factory):
-#     def __init__(self, material, zips,color):
-#         super().__init__(material, zips)
-#         self.color = color
+# class SuratFactory(ahmFactory):
+#    #  def __init__(self, material, zips,color):
+#    #      super().__init__(material, zips)
+#    #      self.color = color
+#    pass
     
-# class Punefactory(BhopalFactory):
-#     def __init__(self, material, zips, color,pockets):
-#         super().__init__(material, zips, color)
-#         self.pockets = pockets
+# class valsadfactory(ahmFactory):
+#    #  def __init__(self, material, zips, color,pockets):
+#    #      super().__init__(material, zips, color)
+#    #      self.pockets = pockets
+#    pass
 
-# obj= Punefactory("cotton",5,"blue",4)  
+# obj= valsadfactory("cotton",5,"blue")  
 # print(obj.material)
 # print(obj.zips)
 # print(obj.color)
@@ -1166,10 +1172,10 @@
 
 
 
-#polimorphism 
+#polimorphism //  method overriding
 # class Animal:
 #     def show(self):
-#         print("hello dog is animal")
+#         print(" bow bow")
     
 
 
@@ -1195,12 +1201,25 @@
 # obj.show()
 # obj2.show()
 
-# encapsulation   
+# encapsulation
+# public   
 # class Factory:
-#     __a = "pune"
+#     a = "rohash"
 
 #     def show(self):
-#        print(Factory.__a)
+#        print(Factory.a)
+
+
+# obj =Factory()
+
+# obj.show()
+
+
+# class Factory:
+#     _a = "phonescreenlock"
+
+#     def show(self):
+#        print(Factory._a)
 
 
 # obj =Factory()
@@ -1210,10 +1229,10 @@
 
 # class Demo:
 #     def __init__(self):
-#         self.__salary = 5000   # Private variable
+#         self.__pinnum = 4578   # Private variable
 
 #     def show(self):
-#         print("Inside class, Private salary:", self.__salary)
+#         print("Inside class, Private pinnum :", self.__pinnum)
 
 
 # obj = Demo()
@@ -1223,10 +1242,10 @@
 
 
 # Direct access (❌ Error)
-# print(obj.__salary)
+# print(obj.__pinnum)
 
 # Correct way (name mangling)
-# print("Outside class, Private salary:", obj._Demo__salary)
+# print("Outside class, Private pinnum:", obj._Demo__pinnum)
 
 
 
@@ -1244,7 +1263,7 @@
       
 # obj=Demo()
 # obj.show() 
-# obj.__salary 
+# obj._Demo__salary 
   
 
 
@@ -1252,40 +1271,41 @@
 
 # from abc import ABC, abstractmethod
 
-# class abstract(ABC):
+# class company(ABC):
 #     @abstractmethod
-#     def perimeter(self):
+#     def condition(self):
 #         pass 
     
 #     @abstractmethod
-#     def area(self):
+#     def rules(self):
 #         pass
 
-# class Square(abstract):
+# class company1(company):
 #     def __init__(self,side):
 #         self.side = side
 
-#     def perimeter(self):
+#     def rules(self):
 #         print("i have created")
     
-#     def area(self):
+#     def condition(self):
 #         print("I have created this ")
 
-# class Circle(abstract):
+# class company2(company):
    
-   
+#    # pass
 #     def __init__(self,radius):
 #         self.radius = radius
     
-#     def perimeter(self):
+#     def rules(self):
 #         print("i have created")
     
-#     def area(self):
+#     def condition(self):
 #         print("I have created this ")
 
-# obj = Circle(7)
-# print(obj)
-# obj2 = Square(12)
+# # obj = company1(23)
+# # print(obj)
+# obj2 = company2(12)
+# print(obj2)
 
 
 # class Animal:
@@ -1320,24 +1340,44 @@
 # obj.show
 
 
-
+# #decoder
 # def decorate(func):
-#     def wrapper(*args,**kwargs):
+#     def wrapper():
 #         print("the addition to your numbers are ")
-#         func(*args,**kwargs)
+#         func()
 #         print("thankyou I hope you liked it ")
 #     return wrapper
 
-
 # @decorate
-# def addition(a,b):
-#     print(f"your total is {a + b} ")
+# def addition(a):
+#     print(f"{a}")
+    
+# addition(2) 
+   
+# def decorate(func) : 
+#    def wrapper(*args,**kwargs):   
+#        print("the addition to your numbers are ")
+#        func(*args,**kwargs)
+#        print("thankyou I hope you liked it ")
+#    return wrapper   
+# @decorate
+# def add(a,b,c,d,e):
+#     print(f"your total is {a + b+ c+d+e} ")
+# add(1,6,5,6,6)          
 
-# addition(12,67)
+
+
+                  
+
+
+
+#*kwargs
+
+
 
 
 # def information(**kwargs):
-#     print("your information is\n\n ")
+#     print("your information is")
 #     for i in kwargs:
 #         print(f"{i} : {kwargs[i]}")
     
@@ -1350,6 +1390,10 @@
 
 # print(l)
 
+
+# fillter
+   
+
 # a = [1,2,3,4,5]
 
 # def double(x):
@@ -1359,7 +1403,26 @@
 
 # print(list(result))
 
-# from modelss.model import hello,maths
+
+
+
+
+# from modelss.m import sum
+# # from modelss.model import hello,maths
+# pass
+
+# sum()
+
+
+# def hello():
+#    pass
+# # def maths():   
+# #    pass
+   
+   
+# hello() 
+# maths()  
+
 
 # a = int(input("how many rows you  want "))
 
