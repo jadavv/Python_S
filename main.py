@@ -1305,7 +1305,47 @@
 # # obj = company1(23)
 # # print(obj)
 # obj2 = company2(12)
-# print(obj2)
+# # print(obj2)
+
+# dunder method
+
+# class Student:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def __str__(self):
+#         return f"Student name is {self.name}"
+
+# s1 = Student("Vinesh")
+# s2 = Student("harsh")
+# s3 = Student("rohit")
+# print(s1,s2,s3)
+
+
+# class MyList:
+#     def __init__(self, items):
+#         self.items = items
+
+#     def __len__(self):
+#         return len(self.items)
+
+# obj = MyList([1,2,3,4,5,6,4])
+# print(len(obj))
+
+
+# class Number:
+#     def __init__(self, value):
+#         self.value = value
+
+#     def __add__(self,hr):
+#         return self.value+ hr.value
+
+# n1 = Number(41)
+# n2 = Number(47)
+
+# print(n1+n2)
+
+
 
 
 # class Animal:
@@ -1316,24 +1356,28 @@
 #     def __str__(self):
 #         return f"hello how are you and your name is {self.name},age{self.age}"
 
-#     def __add__(self,other):
-#         sum = 0
-#         for i in other:
-#             sum = sum + i.age
+   #  def __add__(self,other):
+   #      sum = 0
+   #      for i in other:
+   #          sum = sum + i.age
 
-#         return f"your sum of ages are {self.age + sum}"
+   #      return f"your sum of ages are {self.age + sum}"
 
+# obj=Animal("dogeshbhai",23)
+# print(obj.name)
+# print(obj.age)
 # obj = Animal("lion",12)
-# obj2 = Animal("dolphin",14)
-# obj3 = Animal("tiger",34)
+# obj2 = Animal("dolphin",4)
+# obj3 = Animal("tiger",4)
 
 # print(obj + (obj2,obj3))
+
 
 
 # class Animal:
 #     @property
 #     def show(self):
-#         print("hello how are you")
+#         print("hello how are you hr")
     
 # obj = Animal()
 
@@ -1341,6 +1385,40 @@
 
 
 # #decoder
+# def my_decorator(func):
+#     def wrapper():
+#         print("name  kandle")
+#         func()
+#         print("cover")
+#     return wrapper
+# @my_decorator
+# def cake():
+#        print("testey cake")
+       
+# cake()    
+
+
+#   para.. -> var... ->attru..
+#   fun.. -> method.
+#   valu.. -> arg... 
+
+# def my_decorator(func):
+#     def wrapper(para):
+#         print("Welcome")
+#         func(para)
+#     return wrapper
+
+# @my_decorator
+# def greet(para):
+#     print("Hello", para)
+
+# greet("arg")
+
+
+   
+ 
+
+
 # def decorate(func):
 #     def wrapper():
 #         print("the addition to your numbers are ")
@@ -1372,6 +1450,38 @@
 
 
 #*kwargs
+
+
+# Type	Meaning
+# *args	Non-keyword (positional) arguments → tuple
+# **kwargs	Keyword arguments → dictionary
+
+
+# def add_numbers(*args):
+#     total = 0
+#     for num in args:
+#         total += num
+#     print(total)
+
+# add_numbers(1, 2, 3)
+# add_numbers(10, 20, 30, 40)
+# add_numbers(10,100, 150, 440)
+
+
+
+# def show_info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(key, ":", value)
+
+# show_info(name="Vinesh", age=22, city="Ahmedabad")
+
+def student_record(*args, **kwargs):
+    print("Subjects:", args)
+    print("Details:", kwargs)
+
+student_record(
+    "Math", "Python", "AI","hr",nme="Vinesh", ag=22, name="hr",age=45,
+)
 
 
 

@@ -1,3 +1,3 @@
-@decorate
-def add(a,b):
-    print(f"your total is {a + b} ")
+dogeshbhai",23)
+# print(obj.name)
+# print(obj.age)
