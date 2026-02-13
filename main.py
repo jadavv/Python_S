@@ -1475,13 +1475,13 @@
 
 # show_info(name="Vinesh", age=22, city="Ahmedabad")
 
-def student_record(*args, **kwargs):
-    print("Subjects:", args)
-    print("Details:", kwargs)
+# def student_record(*args, **kwargs):
+#     print("Subjects:", args)
+#     print("Details:", kwargs)
 
-student_record(
-    "Math", "Python", "AI","hr",nme="Vinesh", ag=22, name="hr",age=45,
-)
+# student_record(
+#     "Math", "Python", "AI","hr",nme="Vinesh", ag=22, name="hr",age=45,
+# )
 
 
 
@@ -1500,11 +1500,64 @@ student_record(
 
 # print(l)
 
+# comprehensions in Python (list, dict, set)
+
+
+# list
+# Square numbers from 1–5
+# squares = [x*x for x in range(1,6)]
+# print(squares)
+
+
+# Only even numbers
+# evens = [x for x in range(20) if x % 2 != 0]
+# print(evens)
+# ✅ Dictionary Comprehension
+
+# Number → square mapping
+# square_dict = {x: x*x for x in range(1,6)}
+# print(square_dict)
+
+
+# Only even keys
+# even_dict = {x: x*x for x in range(10) if x%2==0}
+# print(even_dict)
+
+
+
+# ✅ Set Comprehension
+
+
+# lambda funcation 
+
+
+# add = lambda a, b: a + b
+# print(add(3, 478))
+
+# square = lambda x: x*x
+# print(square(14))
+
+# square= lambda x: "even" if x%2==0 else "odd"
+# print(square(11))
+
+
+
+# square={a*a for a in range(1,5)}
+# print(square)
+
+
+
+# map()
+
+# num=[24,40,16,18,19]
+# result=list(map(lambda x: x*2, num))
+# print(result)
+
 
 # fillter
    
 
-# a = [1,2,3,4,5]
+# a = [22,23,19,42,25]
 
 # def double(x):
 #     return x *2
@@ -1513,21 +1566,43 @@ student_record(
 
 # print(list(result))
 
+# nums = [1,2,3,4,5,6]
+# evens = list(filter(lambda x: x%2==0, nums))
+# print(evens)
 
 
+# sorting
+
+# pairs=[(1,3),(2,5),(3,6),(4,1)]
+# pairs.sort(key=lambda x: x[1])
+# print(pairs)
+
+
+
+
+# from modelss.college import hr
+
+# pass
+
+# hr()
 
 
 # from modelss.m import sum
-# # from modelss.model import hello,maths
-# pass
+from modelss.model import hello,maths
+# def sum():
+#     pass
+
+   
 
 # sum()
 
 
-# def hello():
-#    pass
-# # def maths():   
-# #    pass
+
+
+def hello():
+   pass
+def maths():   
+   pass
    
    
 # hello() 
